@@ -42,12 +42,12 @@ class Result extends StatelessWidget {
     return SingleChildScrollView(
       child: Container(
         width: double.infinity,
-        margin: const EdgeInsets.all(20),
+        margin: const EdgeInsets.all(30),
         child: Column(
             mainAxisAlignment: MainAxisAlignment.center,
             crossAxisAlignment: CrossAxisAlignment.stretch,
             children: [
-              const SizedBox(height: 30),
+              const SizedBox(height: 50),
               Text(
                 'You answered $numOfCorrectAnswers out of ${questions.length} questions correctly!',
                 style: const TextStyle(
@@ -55,7 +55,7 @@ class Result extends StatelessWidget {
                 ),
                 textAlign: TextAlign.center,
               ),
-              const SizedBox(height: 30),
+              const SizedBox(height: 40),
               ...getSummaryData().map((e) => Column(children: [
                     Row(
                       children: [
@@ -117,6 +117,9 @@ class Result extends StatelessWidget {
                       color: Color.fromARGB(255, 250, 205, 254),
                     ),
                   )),
+              const SizedBox(
+                height: 50,
+              ),
             ]),
       ),
     );
