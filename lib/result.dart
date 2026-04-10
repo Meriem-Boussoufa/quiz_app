@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
-import 'package:quiz_app/data/questions.dart';
+import './data/questions.dart';
 
 class Result extends StatelessWidget {
   const Result(
